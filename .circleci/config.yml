@@ -13,4 +13,4 @@ jobs:
       - run: dotnet build
       - run: >-
           dotnet test
-          ./tests/Catalog.WebApi.IntegrationTests.csproj
+          /tests/Catalog.WebApi.IntegrationTests.csproj
