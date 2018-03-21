@@ -11,3 +11,6 @@ jobs:
       - checkout
       - run: dotnet restore
       - run: dotnet build
+      - run: >-
+          dotnet test
+          ./tests/Catalog.WebApi.IntegrationTests.csproj
