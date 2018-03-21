@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.WebApi", "src\hosts\Catalog.WebApi\Catalog.WebApi.csproj", "{FA4FC873-B93E-4620-9206-C8B6D22738E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.WebApi", "src\hosts\Catalog.WebApi\Catalog.WebApi.csproj", "{FA4FC873-B93E-4620-9206-C8B6D22738E0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hosts", "hosts", "{0AB947AA-BD3F-4178-96CC-BF23611F36B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "databases", "databases", "{F743CA0D-8DA2-4DAD-8E1D-0A96F6198B46}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CatalogDB", "databases\CatalogDB\CatalogDB.sqlproj", "{72D0189C-2352-4F23-BA95-4A552B27D317}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4522876-41CA-4798-8DAF-430564BD911E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{9D65EC2C-4DCF-4F83-9A9B-BACF32F11038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "src\core\Catalog.Application\Catalog.Application.csproj", "{8658E397-2F4E-4CAA-B582-00015292523C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Application", "src\core\Catalog.Application\Catalog.Application.csproj", "{8658E397-2F4E-4CAA-B582-00015292523C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{F3F439E4-6F25-4896-AE72-1680E0476F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.WebApi.Contracts", "src\contracts\Catalog.WebApi.Contracts\Catalog.WebApi.Contracts.csproj", "{8B1A7B8C-6AA1-47FF-8456-E37ABD272B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.WebApi.Contracts", "src\contracts\Catalog.WebApi.Contracts\Catalog.WebApi.Contracts.csproj", "{8B1A7B8C-6AA1-47FF-8456-E37ABD272B62}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CatalogDB", "databases\CatalogDB\CatalogDB.sqlproj", "{72D0189C-2352-4F23-BA95-4A552B27D317}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,12 +31,6 @@ Global
 		{FA4FC873-B93E-4620-9206-C8B6D22738E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4FC873-B93E-4620-9206-C8B6D22738E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4FC873-B93E-4620-9206-C8B6D22738E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72D0189C-2352-4F23-BA95-4A552B27D317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72D0189C-2352-4F23-BA95-4A552B27D317}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72D0189C-2352-4F23-BA95-4A552B27D317}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{72D0189C-2352-4F23-BA95-4A552B27D317}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72D0189C-2352-4F23-BA95-4A552B27D317}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72D0189C-2352-4F23-BA95-4A552B27D317}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{8658E397-2F4E-4CAA-B582-00015292523C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8658E397-2F4E-4CAA-B582-00015292523C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8658E397-2F4E-4CAA-B582-00015292523C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +39,12 @@ Global
 		{8B1A7B8C-6AA1-47FF-8456-E37ABD272B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1A7B8C-6AA1-47FF-8456-E37ABD272B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1A7B8C-6AA1-47FF-8456-E37ABD272B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D0189C-2352-4F23-BA95-4A552B27D317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D0189C-2352-4F23-BA95-4A552B27D317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D0189C-2352-4F23-BA95-4A552B27D317}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72D0189C-2352-4F23-BA95-4A552B27D317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D0189C-2352-4F23-BA95-4A552B27D317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D0189C-2352-4F23-BA95-4A552B27D317}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,11 +52,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FA4FC873-B93E-4620-9206-C8B6D22738E0} = {0AB947AA-BD3F-4178-96CC-BF23611F36B0}
 		{0AB947AA-BD3F-4178-96CC-BF23611F36B0} = {C4522876-41CA-4798-8DAF-430564BD911E}
-		{72D0189C-2352-4F23-BA95-4A552B27D317} = {F743CA0D-8DA2-4DAD-8E1D-0A96F6198B46}
 		{9D65EC2C-4DCF-4F83-9A9B-BACF32F11038} = {C4522876-41CA-4798-8DAF-430564BD911E}
 		{8658E397-2F4E-4CAA-B582-00015292523C} = {9D65EC2C-4DCF-4F83-9A9B-BACF32F11038}
 		{F3F439E4-6F25-4896-AE72-1680E0476F77} = {C4522876-41CA-4798-8DAF-430564BD911E}
 		{8B1A7B8C-6AA1-47FF-8456-E37ABD272B62} = {F3F439E4-6F25-4896-AE72-1680E0476F77}
+		{72D0189C-2352-4F23-BA95-4A552B27D317} = {F743CA0D-8DA2-4DAD-8E1D-0A96F6198B46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2E2CC67-164A-4F14-9A8C-C83B65EDAD76}
