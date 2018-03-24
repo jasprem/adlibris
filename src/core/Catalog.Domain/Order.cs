@@ -5,14 +5,14 @@
         public string CustomerId { get; set; }
         public string ProductId { get; set; }
         public string Shelf { get; set; }
-        public int NumberOfItems { get; set; }
+        public int TotalOrdered { get; set; }
 
-        public Order(string customerId, string productId, string shelf, int numberOfItems)
+        public Order(string customerId, string productId, string shelf, int totalOrdered)
         {
             CustomerId = customerId;
             ProductId = productId;
             Shelf = shelf;
-            NumberOfItems = numberOfItems;
+            TotalOrdered = totalOrdered;
         }
     }
 }
