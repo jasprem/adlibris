@@ -2,7 +2,7 @@
 
 namespace Catalog.WebApi.Contracts
 {
-    public class ProductStatus
+    public class ProductStatusParameter
     {
         public int TotalAvailable { get; set; }
         public LocationDetails LocationDetails { get; set; }

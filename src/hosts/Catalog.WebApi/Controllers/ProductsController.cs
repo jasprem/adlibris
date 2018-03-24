@@ -20,7 +20,7 @@ namespace Catalog.WebApi.Controllers
         [HttpGet("{productId}/status")]
         public IActionResult GetProductAvailability(string productId)
         {
-            var productAvailablity = new ProductStatus();
+            var productAvailablity = new ProductStatusParameter();
             return Ok(productAvailablity);
         }
     }

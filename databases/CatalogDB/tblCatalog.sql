@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[tblCatalog]
 (
-	[product] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+	[productId] NVARCHAR(50) NOT NULL , 
     [shelf] NVARCHAR(50) NOT NULL, 
-    [totalAvailable] INT NOT NULL
+    [available] INT NOT NULL
 )
