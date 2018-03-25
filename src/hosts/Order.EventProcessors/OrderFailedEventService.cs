@@ -1,4 +1,4 @@
-﻿namespace Catalog.EventHandlers
+﻿namespace Order.EventProcessors
 {
     public class OrderFailedEventService
     {

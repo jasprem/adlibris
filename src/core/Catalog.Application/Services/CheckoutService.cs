@@ -1,6 +1,6 @@
-﻿using Catalog.CommandProcessors;
-using Catalog.Commands;
-using Catalog.WebApi.Contracts;
+﻿using Catalog.WebApi.Contracts;
+using Order.CommandProcessors;
+using Order.Commands;
 
 namespace Catalog.Application.Services
 {

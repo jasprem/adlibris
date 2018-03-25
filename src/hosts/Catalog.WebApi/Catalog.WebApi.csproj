@@ -17,6 +17,7 @@
     <ProjectReference Include="..\..\contracts\Catalog.WebApi.Contracts\Catalog.WebApi.Contracts.csproj" />
     <ProjectReference Include="..\..\core\Catalog.Application\Catalog.Application.csproj" />
     <ProjectReference Include="..\..\core\Catalog.Persistence\Catalog.Persistence.csproj" />
+    <ProjectReference Include="..\Order.EventProcessors\Order.EventProcessors.csproj" />
   </ItemGroup>
 
 </Project>

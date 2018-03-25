@@ -62,8 +62,6 @@
   <ItemGroup>
     <Build Include="tblReservation.sql" />
     <Build Include="tblCatalog.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="CatalogDB.refactorlog" />
+    <Build Include="tblProductStatus.sql" />
   </ItemGroup>
 </Project>

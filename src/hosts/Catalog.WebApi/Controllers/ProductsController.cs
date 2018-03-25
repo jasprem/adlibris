@@ -1,4 +1,5 @@
-﻿using Catalog.WebApi.Contracts;
+﻿using Catalog.Application.Services;
+using Catalog.WebApi.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Catalog.WebApi.Controllers
@@ -6,22 +7,19 @@ namespace Catalog.WebApi.Controllers
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {
-        public ProductsController()
-        {
-            
-        }
+        private readonly ProductStatusService _productStatusService;
 
-        [HttpGet("{productId}")]
-        public IActionResult GetProduct(string productId)
+        public ProductsController(
+            ProductStatusService productStatusService)
         {
-            return Ok();
+            _productStatusService = productStatusService;
         }
 
         [HttpGet("{productId}/status")]
         public IActionResult GetProductAvailability(string productId)
         {
-            var productAvailablity = new ProductStatusParameter();
-            return Ok(productAvailablity);
+            var productStatus = _productStatusService.GetProductStatus(productId);
+            return Ok(productStatus);
         }
     }
 }

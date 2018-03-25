@@ -1,7 +1,6 @@
-﻿using System;
-using Catalog.Commands;
+﻿using Order.Commands;
 
-namespace Catalog.CommandProcessors
+namespace Order.CommandProcessors
 {
     public class OrderCommandHandler
     {

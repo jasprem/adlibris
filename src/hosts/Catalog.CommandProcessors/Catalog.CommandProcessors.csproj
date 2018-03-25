@@ -6,9 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\contracts\Catalog.Commands\Catalog.Commands.csproj" />
-    <ProjectReference Include="..\..\core\Catalog.Domain\Catalog.Domain.csproj" />
     <ProjectReference Include="..\..\core\Catalog.Persistence\Catalog.Persistence.csproj" />
-    <ProjectReference Include="..\Catalog.EventHandlers\Catalog.EventHandlers.csproj" />
   </ItemGroup>
 
 </Project>

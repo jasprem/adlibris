@@ -6,9 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\contracts\Catalog.Commands\Catalog.Commands.csproj" />
-    <ProjectReference Include="..\..\contracts\Catalog.Events\Catalog.Events.csproj" />
     <ProjectReference Include="..\..\contracts\Catalog.WebApi.Contracts\Catalog.WebApi.Contracts.csproj" />
-    <ProjectReference Include="..\..\hosts\Catalog.CommandProcessors\Catalog.CommandProcessors.csproj" />
+    <ProjectReference Include="..\..\hosts\Order.CommandProcessors\Order.CommandProcessors.csproj" />
     <ProjectReference Include="..\Catalog.Domain\Catalog.Domain.csproj" />
   </ItemGroup>
 

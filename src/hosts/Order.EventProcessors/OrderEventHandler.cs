@@ -1,7 +1,6 @@
-﻿using System;
-using Catalog.Events;
+﻿using Order.Events;
 
-namespace Catalog.EventHandlers
+namespace Order.EventProcessors
 {
     public class OrderEventHandler
     {

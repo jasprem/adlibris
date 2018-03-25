@@ -1,11 +1,12 @@
 ﻿using Catalog.Application.Services;
 using Catalog.CommandProcessors;
-using Catalog.EventHandlers;
 using Catalog.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Order.CommandProcessors;
+using Order.EventProcessors;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Catalog.WebApi
@@ -26,11 +27,14 @@ namespace Catalog.WebApi
             var connectionString = Configuration.GetSection("Connection").Value;
             services.AddScoped<IProductRepository>(r => new ProductRepository(connectionString));
             services.AddTransient<CheckoutService>();
+            services.AddTransient<ProductStatusService>();
             services.AddTransient<OrderCommandHandler>();
             services.AddTransient<OrderService>();
             services.AddTransient<OrderEventHandler>();
             services.AddTransient<OrderSucceededEventService>();
             services.AddTransient<OrderFailedEventService>();
+            services.AddTransient<UpdateProductStatusCommandHandler>();
+            services.AddTransient<UpdateProductStatusService>();
             services.AddMvc();
             services.AddSwaggerGen(c =>
             {

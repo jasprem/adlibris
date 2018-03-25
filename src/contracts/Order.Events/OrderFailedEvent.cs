@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Catalog.Events
+﻿namespace Order.Events
 {
     public class OrderFailedEvent
     {
