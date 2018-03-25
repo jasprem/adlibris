@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{634C3285-32D9-4BD6-9EFF-4D0978590980}"
 	ProjectSection(SolutionItems) = preProject
 		.circleci\config.yml = .circleci\config.yml
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Commands", "src\contracts\Catalog.Commands\Catalog.Commands.csproj", "{F6E644FC-EDF1-4B4B-8AD8-AD73C1D30DC5}"
