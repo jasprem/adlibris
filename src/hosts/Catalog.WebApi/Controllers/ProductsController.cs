@@ -1,10 +1,9 @@
 ﻿using Catalog.Application.Services;
-using Catalog.WebApi.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Catalog.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/products")]
     public class ProductsController : Controller
     {
         private readonly ProductStatusService _productStatusService;
@@ -16,9 +15,13 @@ namespace Catalog.WebApi.Controllers
         }
 
         [HttpGet("{productId}/status")]
-        public IActionResult GetProductAvailability(string productId)
+        public IActionResult GetProductStatus(string productId)
         {
             var productStatus = _productStatusService.GetProductStatus(productId);
+            if (productStatus == null)
+            {
+                return NotFound();
+            }
             return Ok(productStatus);
         }
     }

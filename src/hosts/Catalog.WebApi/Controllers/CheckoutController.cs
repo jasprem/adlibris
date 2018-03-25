@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Catalog.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/checkout")]
     public class CheckoutController : Controller
     {
         private readonly CheckoutService _checkoutService;
